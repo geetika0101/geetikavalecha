@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require('cors');
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
+const { log } = require('console');
 require('dotenv').config()
 
 const PORT = process.env.PORT || 3001;
@@ -20,8 +21,8 @@ app.get("/api", (req, res) => {
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "geetikav0101@gmail.com",
-    pass: "nuqz dtfg tnga cjrr"
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.EMAIL_PASS
   },
 });
 
@@ -33,7 +34,8 @@ contactEmail.verify((error) => {
   }
 });
 
-app.post("/api/contact",  bodyParser.urlencoded({ extended: false }), (req, res) => {
+app.post("/contact-api",  bodyParser.urlencoded({ extended: false }), (req, res) => {
+    log("testing");
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
