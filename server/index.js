@@ -21,8 +21,8 @@ app.get("/api", (req, res) => {
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.EMAIL_PASS
+    user: 'geetikav0101@gmail.com',
+    pass: 'nuqz dtfg tnga cjrr'
   },
 });
 
@@ -34,7 +34,7 @@ contactEmail.verify((error) => {
   }
 });
 
-app.post("/contact-api",  bodyParser.urlencoded({ extended: false }), (req, res) => {
+app.post("/api/contact",  bodyParser.urlencoded({ extended: false }), (req, res) => {
     log("testing");
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
