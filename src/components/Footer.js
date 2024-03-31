@@ -3,7 +3,7 @@ import logo from "../assets/img/logo-icon.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from '../assets/img/resume.png';
-import ResumeDoc from '../assets/files/exampleDoc.pdf'
+import ResumeDoc from '../assets/files/GeetikaResume2024.pdf'
 
 export const Footer = () => {
   return (

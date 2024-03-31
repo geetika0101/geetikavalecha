@@ -5,7 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/resume.png';
 import { HashLink } from 'react-router-hash-link';
-import ResumeDoc from '../assets/files/exampleDoc.pdf'
+import ResumeDoc from '../assets/files/GeetikaResume2024.pdf'
 
 import {
   BrowserRouter as Router

@@ -1,9 +1,10 @@
 import react from "../assets/img/react.png";
 import java from "../assets/img/java.png";
-import html from "../assets/img/html.png";
+import sql from "../assets/img/sql.png";
 import css from "../assets/img/css.png";
 import git from "../assets/img/git.png";
 import python from "../assets/img/python.png";
+import javascript from "../assets/img/javascript.png";
 import fairyDust from "../assets/img/fairy-dust.mp4";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -52,8 +53,12 @@ export const Skills = () => {
                                 <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={html} alt="Image" />
-                                <h5>HTML</h5>
+                                <img src={sql} alt="Image" />
+                                <h5>SQL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={javascript} alt="Image" />
+                                <h5>javascript</h5>
                             </div>
                             <div className="item">
                                 <img src={css} alt="Image" />
