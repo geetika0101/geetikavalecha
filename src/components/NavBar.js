@@ -55,7 +55,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/geetika-valecha-b2594a14a/"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/geetika0101?tab=repositories"><img src={navIcon2} alt="" /></a>
-                <a href={ResumeDoc} download="MyResumeDoc" ><img src={navIcon3} alt="" /></a>
+                <a href={ResumeDoc} download="GeetikaResume2024" ><img src={navIcon3} alt="" /></a>
               </div>
             </span>
           </Navbar.Collapse>
