@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1>{`Hi! I'm Geetika`}</h1>
-                <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                <p>Geetika is a hard working individual.</p>
+                <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <p>I am a dedicated software developer with a passion for crafting innovative and efficient solutions to complex problems. With expertise in multiple programming languages and frameworks, I thrive on the challenges of building robust applications and continuously enhancing my skill set through ongoing learning and professional development.</p>
               </div>}
             </TrackVisibility>
           </Col>
